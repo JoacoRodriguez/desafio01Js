@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- LINK JAVASCRIPT -->
+    <script src="script.js"></script>
+
+    <title>Conversor de divisas</title>
+</head>
+<body>
+    <h1>Conversor de divisas</h1>
+    Cantidad: <input type="range" id="cantidad" min="0" max="1000" value="0" onchange="convertir()">
+    <span id="valor">0</span><br><br>
+    Convertir de:
+    <select id="deDonde" onchange="convertir()">
+        <!-- CONVERTIR DE -->
+        <option value="1">Peso argentino</option>
+        <option value="2">Dolar</option>
+        <option value="3">Euro</option>
+    </select><br><br>
+    Convertir a:
+    <select id="aDonde" onchange="convertir()">
+        <!-- CONVERTIR A -->
+        
+        <option value="1">Peso argentino</option>
+        <option value="2">Dolar</option>
+        <option value="3">Euro</option>
+    </select>
+    <h1 id="resultado">$0.00</h1>
+</body>
+</html>
